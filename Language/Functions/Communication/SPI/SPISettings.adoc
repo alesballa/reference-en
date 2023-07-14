@@ -22,7 +22,9 @@ If any of your settings are variables, you may create a SPISettings object to ho
 `SPI.beginTransaction(SPISettings(14000000, MSBFIRST, SPI_MODE0))`
 Note: Best if all 3 settings are constants
 
-`SPISettings mySetting(speedMaximum, dataOrder, dataMode)`
+`SPISettings mySetting`
+`mySetting = SPISettings(speedMaximum, dataOrder, dataMode)`
+`SPI.beginTransaction(mySetting)`
 Note: Best when any setting is a variable''
 
 
